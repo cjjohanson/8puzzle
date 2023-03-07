@@ -321,11 +321,11 @@ def main():
     # print the outputs from the chosen algorithm
     if result is None:
         print("No solution found")
-    elif result == [None]:
+    elif result == []:
         print("Start node was the goal!")
     else:
         print(f"Solution: {result}")
-        print(f"{len(result) - 1} moves to get to goal state")
+        print(f"{len(result)} moves to get to goal state")
         print(f"Total number of nodes generated: {total_nodes_generated}")
         print(f"Path cost for solution: {total_cost}")
 
